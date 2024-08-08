@@ -34,24 +34,5 @@ Pairwise Comparison: Scatter plots were used to compare all fields, revealing th
 Conclusion and Future Work
 
 The initial analysis identifies employment status, income, credit score, and prior default as the most significant factors in credit card approval. Future work may involve building predictive models based on these insights and incorporating additional variables such as criminal records, health information, and net balance between monthly income and expenses.
-
-How to Run the App
-
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/yourusername/credit-card-approval-app.git
-Install required packages:
-R
-Copy code
-install.packages(c("shiny", "ggplot2", "dplyr", "tidyr"))
-Run the Shiny app:
-R
-Copy code
-shiny::runApp("app.R")
-Technologies Used
-
-R: Data preprocessing, analysis, and visualization.
-Shiny: Web application framework for R.
 ggplot2: Visualization library for creating plots.
 dplyr and tidyr: Data manipulation packages for cleaning and transforming data.
