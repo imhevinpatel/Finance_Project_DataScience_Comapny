@@ -1,9 +1,57 @@
 # Finance_Project_DataScience_Comapny
 
-Objectives:
+Credit Card Approval Shiny App
 
-The main objective of developing a Credit Card Approval Shiny App is to show the impact of different fields like Gender, Age, Income, Number of years employed etc on the approval for a Credit Card. This app have some static graphs(which include histograms, scatter plots, box plots etc) and some interactive plots that will help user to select the fields of interest.
+Overview
 
-The primary objective of this analysis is to implement the data mining techniques on a credit approval dataset. Risks can be identified while lending,data-based conclusions can  about probability of repayment can be derived and recommendations can be put forward.
+The Credit Card Approval Shiny App is designed to analyze and visualize the factors that influence the approval of credit card applications. By leveraging various data mining techniques, the app allows users to explore how attributes like gender, age, income, years employed, and more impact the likelihood of credit card approval.
 
-The aim of the analysis is to look for impact the various fields have on our final outcome of Credit Approval.
+Features
+
+Interactive Visualizations: Explore the influence of different attributes on credit card approval through interactive scatter plots, histograms, and box plots.
+Data Preprocessing: The dataset undergoes several preprocessing steps, including handling missing values, transforming categorical variables, and renaming attributes for clarity.
+Exploratory Data Analysis (EDA): Analyze the distribution of key variables and their relationships with the credit card approval outcome.
+Predictive Insights: Gain insights into the most significant factors affecting credit card approval, such as employment status, income, credit score, and prior defaults.
+Dataset
+
+The dataset used in this project contains 690 records, each representing an individual applying for a credit card. It includes 16 variables:
+
+The first 15 variables represent attributes such as gender, age, marital status, years employed, etc.
+The 16th variable is the outcome of the application (approved or rejected).
+Data Preprocessing
+
+Several preprocessing steps were performed on the dataset:
+
+Categorical Transformation: Converted categorical variables to binary values (e.g., 't' and 'f' to 1 and 0).
+Missing Data Treatment: Imputed missing values using median values for numerical fields and mode for categorical fields.
+Data Cleaning: Removed or transformed irrelevant fields like ZipCode.
+Attribute Renaming: Renamed attributes for clarity and confidentiality.
+Exploratory Data Analysis (EDA)
+
+Continuous Variables: Initial plots showed that variables like age, debt, credit score, income, and years employed have skewed distributions. Log transformations were applied to reduce skewness.
+Discrete Variables: Variables like prior default and employment status were found to significantly impact credit approval outcomes.
+Pairwise Comparison: Scatter plots were used to compare all fields, revealing that years employed has the highest linear correlation with credit approval.
+Conclusion and Future Work
+
+The initial analysis identifies employment status, income, credit score, and prior default as the most significant factors in credit card approval. Future work may involve building predictive models based on these insights and incorporating additional variables such as criminal records, health information, and net balance between monthly income and expenses.
+
+How to Run the App
+
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/yourusername/credit-card-approval-app.git
+Install required packages:
+R
+Copy code
+install.packages(c("shiny", "ggplot2", "dplyr", "tidyr"))
+Run the Shiny app:
+R
+Copy code
+shiny::runApp("app.R")
+Technologies Used
+
+R: Data preprocessing, analysis, and visualization.
+Shiny: Web application framework for R.
+ggplot2: Visualization library for creating plots.
+dplyr and tidyr: Data manipulation packages for cleaning and transforming data.
